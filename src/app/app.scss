@@ -1,0 +1,9 @@
+@use '@angular/material' as mat;
+
+// Tüm uygulama için FAB override
+:root {
+  @include mat.fab-overrides((
+    container-color: orange,
+    container-elevation-shadow: red,
+  ));
+}
