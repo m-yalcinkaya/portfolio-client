@@ -6,6 +6,6 @@ import { LayoutModule } from './layout/layout-module';
 @NgModule({
   declarations: [],
   imports: [CommonModule, ComponentsModule, LayoutModule],
-  exports: [LayoutModule, ComponentsModule],
+  exports: [LayoutModule],
 })
 export class AdminModule {}

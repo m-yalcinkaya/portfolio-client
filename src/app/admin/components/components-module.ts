@@ -25,7 +25,6 @@ import { AppRoutingModule } from '../../app-routing-module';
     SchoolsModule,
     SkillsModule,
     BlogsModule,
-    AppRoutingModule,
   ],
 })
 export class ComponentsModule {}

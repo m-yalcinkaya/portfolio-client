@@ -8,6 +8,6 @@ import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [Layout],
   imports: [CommonModule, RouterModule, ComponentsModule, MatSidenavModule],
-  exports: [Layout, ComponentsModule],
+  exports: [Layout],
 })
 export class LayoutModule {}

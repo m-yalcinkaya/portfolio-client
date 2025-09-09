@@ -4,18 +4,29 @@ import { Blogs } from './blogs';
 import { RouterModule } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
-import { MatIconModule } from '@angular/material/icon';
-import { MatCardModule } from '@angular/material/card';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginator } from '@angular/material/paginator';
+import { List } from './list/list';
+import { CreateButton } from './create-button/create-button';
+import { MatDialogModule } from '@angular/material/dialog';
+import { CreateDialog } from './create-dialog/create-dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @NgModule({
-  declarations: [Blogs],
+  declarations: [Blogs, List, CreateButton, CreateDialog],
   imports: [
     CommonModule,
     RouterModule.forChild([{ path: '', component: Blogs }]),
     MatButtonModule,
     MatDividerModule,
-    MatIconModule,
-    MatCardModule,
+    MatTableModule,
+    MatPaginator,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatCheckboxModule,
   ],
 })
 export class BlogsModule {}

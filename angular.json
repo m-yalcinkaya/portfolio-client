@@ -34,7 +34,15 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/ngx-spinner/animations/ball-beat.css",
+              "node_modules/alertifyjs/build/css/alertify.min.css",
+              "node_modules/alertifyjs/build/css/themes/bootstrap.min.css",
+              "node_modules/alertifyjs/build/css/themes/semantic.min.css",
+              "node_modules/alertifyjs/build/css/themes/default.min.css"
+            ],
+            "scripts": [
+              "node_modules/alertifyjs/build/alertify.min.js"
             ],
             "server": "src/main.server.ts",
             "outputMode": "server",

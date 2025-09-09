@@ -1,0 +1,27 @@
+<h2 mat-dialog-title>Blog Ekle</h2>
+<mat-dialog-content>
+  <mat-form-field appearance="outline" class="all-padding example-margin">
+    <mat-label>Title</mat-label>
+    <input matInput #txtTitle />
+  </mat-form-field>
+  <mat-form-field appearance="outline" class="full-width example-margin">
+    <mat-label>Write your article</mat-label>
+    <textarea matInput rows="10" #txtContent></textarea>
+  </mat-form-field>
+  <div class="all-padding example-margin">
+    <input id="imageUpload" type="file" #txtImage />
+  </div>
+  <mat-checkbox class="example-margin all-padding" #txtIsPublished
+    >Publish</mat-checkbox
+  >
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button matButton>No Thanks</button>
+  <button
+    matButton
+    cdkFocusInitial
+    (click)="createBlog(txtTitle, txtContent, txtIsPublished)"
+  >
+    Ok
+  </button>
+</mat-dialog-actions>

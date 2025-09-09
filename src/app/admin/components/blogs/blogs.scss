@@ -1,35 +1,6 @@
-@use '@angular/material' as mat;
-
-:host {
-  @include mat.fab-overrides((
-    container-color: lightblue,
-    container-elevation-shadow:red,
-    foreground-color: black,
-  ));
-}
-
-.button-container {
+.right-aligned-cell {
   display: flex;
   justify-content: flex-end;
+  align-items: center; /* Dikeyde ortalamak için */
   padding: 10px;
-}
-
-.example-card {
-  max-width: 400px;
-  display: flex;
-}
-
-.example-header-image {
-  background-image: url('https://material.angular.dev/assets/img/examples/shiba1.jpg');
-  background-size: cover;
-}
-
-.card-container {
-  display: flex;       /* kartları yan yana dizer */
-  gap: 16px;           /* kartlar arası boşluk */
-  flex-wrap: wrap;     /* ekran daraldığında alt satıra kaymasını sağlar */
-}
-
-.example-card {
-  flex: 1 1 300px;     /* her kart minimum 300px genişlikte ve esnek */
 }
